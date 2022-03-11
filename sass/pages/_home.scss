@@ -1,9 +1,9 @@
 html {
   scroll-behavior: smooth;
 
-  @include respond(phone) {
-    scroll-behavior: auto;
-  }
+  // @include respond(phone) {
+  //   scroll-behavior: auto;
+  // }
 }
 
 

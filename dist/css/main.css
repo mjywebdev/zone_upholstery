@@ -734,9 +734,9 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -50rem;
   z-index: 1500;
-  opacity: 0;
+  opacity: 1;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
@@ -774,7 +774,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  left: 0; }
 
 .navigation__icon {
   position: relative;
@@ -813,9 +814,6 @@ body {
 
 html {
   scroll-behavior: smooth; }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      scroll-behavior: auto; } }
 
 .section-about {
   background-color: #f0f0f0;
