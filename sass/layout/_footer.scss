@@ -1,0 +1,86 @@
+.footer {
+    background-color: $color-grey-darker;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
+    .olink {
+        color: $color-primary;
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+
+    &__logo-box {
+        text-align: center;
+    }
+
+    &__logo {
+        width: 25rem;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    &__navigation {
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-light-1;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary;
+        }
+    }
+
+    &__copyright {
+        color: $color-grey-light-1;
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__social {
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+}
+
+.fa-brands {
+    color: #4267B2
+}
